@@ -2,19 +2,19 @@
 {
     private static void Main(string[] args)
     {
-        int pictures;
+        int picture;
         int pictureInRow;
         int numberOfFullRows;
-        int leftPictures;
+        int remainPicture;
 
         Console.Write("Введите количество картинок: ");
-        pictures = Convert.ToInt32(Console.ReadLine());
-        Console.Write("Введите количество столбцов: ");
+        picture = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Введите количество картинок в столбце: ");
         pictureInRow = Convert.ToInt32(Console.ReadLine());
 
-        numberOfFullRows = pictures / pictureInRow;
-        leftPictures = pictures % pictureInRow;
+        numberOfFullRows = picture / pictureInRow;
+        remainPicture = picture % pictureInRow;
 
-        Console.WriteLine($"Можно будет вывести {numberOfFullRows} рядов и сверх меры будет {leftPictures} картинок");
+        Console.WriteLine($"Можно будет вывести {numberOfFullRows} рядов и сверх меры будет {remainPicture} картинок");
     }
 }
